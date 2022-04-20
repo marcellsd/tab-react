@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { TabItem } from "./TabItens";
 
 
-const tabsJSON = [
+const tabsData = [
     {
         tabName: 'tab 1',
         tabText: 'Texto do primeiro tab'
@@ -19,10 +19,11 @@ const tabsJSON = [
         tabName: 'tab 4',
         tabText: 'Texto do quarto tab'
     },
+    
 ]
 
-const tabNames = tabsJSON.map((tab) => tab.tabName)
-const tabTexts = tabsJSON.map((tab) => tab.tabText)
+const tabNames = tabsData.map((tab) => tab.tabName)
+const tabTexts = tabsData.map((tab) => tab.tabText)
 
 export function Tab(){
     const [currentTab, setCurrentTab] = useState(0)
